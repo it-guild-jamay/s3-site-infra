@@ -45,3 +45,4 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           BACKEND_BUCKET: ${{ secrets.BACKEND_BUCKET }}
           AWS_REGION: ${{ secrets.AWS_REGION }}
+          TF_VAR_aws_region: ${{ secrets.AWS_REGION }}
