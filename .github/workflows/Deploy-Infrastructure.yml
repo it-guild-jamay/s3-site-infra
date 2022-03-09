@@ -18,7 +18,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v3
         with:
-          repository: 'https://github.com/it-guild-jamay/s3-site-backend'
+          repository: 'it-guild-jamay/s3-site-backend'
           path: 'backend-functions'
       
       - name: echo Test checkoud
