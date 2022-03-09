@@ -18,6 +18,7 @@ jobs:
           repository: ''
 
   Deploy-S3-Website:
+    needs: [Deploy-Backend-API-Gateway]
     runs-on: ubuntu-latest
     steps:
       - name: Initial Facts
