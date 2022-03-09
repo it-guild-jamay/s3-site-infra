@@ -43,6 +43,7 @@ jobs:
       
       - name: Terraform Plan
         run: |
+          cd frontend/
           terraform plan
           terraform validate
           terraform apply --auto-approve
