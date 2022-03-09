@@ -13,9 +13,16 @@ jobs:
         run: echo "Job"
 
       - name: Check out repository code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
+
+      - name: Check out repository code
+        uses: actions/checkout@v3
         with:
-          repository: ''
+          repository: 'https://github.com/it-guild-jamay/s3-site-backend'
+          path: 'backend-functions'
+      
+      - name: echo Test checkoud
+        run: ls -l backend-functions
 
   Deploy-S3-Website:
     needs: [Deploy-Backend-API-Gateway]
