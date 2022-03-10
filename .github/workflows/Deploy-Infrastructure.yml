@@ -19,6 +19,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: 'it-guild-jamay/s3-site-backend.git'
+          ref: 'main'
           path: 'backend-functions'
       
       - name: echo Test checkoud
